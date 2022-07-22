@@ -1,3 +1,8 @@
+let estado = {
+  nome: "",
+  idade: 0,
+};
+
 // Captura elementos do DOM
 const formulario = document.querySelector("#registro");
 
@@ -8,9 +13,9 @@ function submitListener(event) {
   event.preventDefault();
 
   // Captura dados
-  const nome = registro.nome.value;
-  const idade = Number(registro.idade.value);
+  estado.nome = registro.nome.value;
+  estado.idade = Number(registro.idade.value);
 
-  console.log(nome);
-  console.log(idade);
+  console.log(estado.nome);
+  console.log(estado.idade);
 }

@@ -29,5 +29,20 @@ function insereRegistro(estado) {
     idLista = "listaMasters";
   }
 
-  console.log(idLista);
+  const itemLista = criaItemLista(estado);
+  console.log(itemLista);
+}
+
+function criaItemLista(estado) {
+  const itemLista = document.createElement("li");
+  const spanNome = document.createElement("span");
+  const spanIdade = document.createElement("span");
+
+  spanNome.textContent = estado.nome;
+  spanIdade.textContent = estado.idade;
+
+  itemLista.appendChild(spanNome);
+  itemLista.appendChild(spanIdade);
+
+  return itemLista;
 }

@@ -29,8 +29,9 @@ function insereRegistro(estado) {
     idLista = "listaMasters";
   }
 
+  const lista = document.getElementById(idLista);
   const itemLista = criaItemLista(estado);
-  console.log(itemLista);
+  lista.appendChild(itemLista);
 }
 
 function criaItemLista(estado) {

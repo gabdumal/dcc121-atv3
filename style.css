@@ -1,4 +1,25 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(200deg 15% 75%);
+  background-color: hsl(200deg 15% 85%);
+}
+
+.listas-cadastrados > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.listas-cadastrados li {
+  list-style: none;
+}
+
+.lista-juniors li :first-child {
+  color: hsl(120, 100%, 25%);
+}
+
+.lista-masters li :first-child {
+  color: hsl(240, 100%, 50%);
+}
+
+.lista-seniors li :first-child {
+  color: hsl(300, 100%, 25%);
 }

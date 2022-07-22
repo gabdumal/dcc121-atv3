@@ -3,10 +3,18 @@ body {
   background-color: hsl(200deg 15% 99%);
 }
 
+article > section {
+  margin-bottom: 3em;
+}
+
 .listas-cadastrados > div {
   display: flex;
   flex-direction: row;
-  gap: 5em;
+  justify-content: space-around;
+}
+
+.listas-cadastrados h1 {
+  margin-bottom: 0;
 }
 
 .listas-cadastrados ul {

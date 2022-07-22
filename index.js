@@ -16,6 +16,18 @@ function submitListener(event) {
   estado.nome = registro.nome.value;
   estado.idade = Number(registro.idade.value);
 
-  console.log(estado.nome);
-  console.log(estado.idade);
+  insereRegistro(estado);
+}
+
+function insereRegistro(estado) {
+  let idLista;
+  if (estado.idade < 18) {
+    idLista = "listaJuniors";
+  } else if (estado.idade > 40) {
+    idLista = "listaSeniors";
+  } else {
+    idLista = "listaMasters";
+  }
+
+  console.log(idLista);
 }

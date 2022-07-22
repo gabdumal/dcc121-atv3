@@ -6,5 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torneio de Programação</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Torneio de Programação</h1>
+    </header>
+    <article>
+      <h1>Cadastro de Competidores</h1>
+      <section>
+        <form class="registro">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" />
+          <label>Idade</label>
+          <input id="idade" for="idade" type="number" name="idade" />
+          <input type="submit" name="enviar" value="Enviar" />
+        </form>
+      </section>
+      <section>
+        <h1>Cadastrados</h1>
+        <section>
+          <h1>Juniores</h1>
+          <ul id="listaJuniors"></ul>
+        </section>
+        <section>
+          <h1>Masters</h1>
+          <ul id="listaMasters"></ul>
+        </section>
+        <section>
+          <h1>Seniores</h1>
+          <ul id="listaSeniors"></ul>
+        </section>
+      </section>
+    </article>
+  </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
     <title>Torneio de Programação</title>
   </head>
@@ -30,20 +31,22 @@
           <input type="submit" name="adicionar" value="Adicionar" />
         </form>
       </section>
-      <section>
+      <section class="listas-cadastrados">
         <h1>Cadastrados</h1>
-        <section>
-          <h1>Juniores</h1>
-          <ul id="listaJuniors"></ul>
-        </section>
-        <section>
-          <h1>Masters</h1>
-          <ul id="listaMasters"></ul>
-        </section>
-        <section>
-          <h1>Seniores</h1>
-          <ul id="listaSeniors"></ul>
-        </section>
+        <div>
+          <section>
+            <h1>Juniores</h1>
+            <ul id="listaJuniors" class="lista-juniors"></ul>
+          </section>
+          <section>
+            <h1>Masters</h1>
+            <ul id="listaMasters" class="lista-masters"></ul>
+          </section>
+          <section>
+            <h1>Seniores</h1>
+            <ul id="listaSeniors" class="lista-seniors"></ul>
+          </section>
+        </div>
       </section>
     </article>
   </body>

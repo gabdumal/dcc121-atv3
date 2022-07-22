@@ -29,9 +29,13 @@ function insereRegistro(estado) {
     idLista = "listaMasters";
   }
 
+  // Cria registro e o adiciona à lista
   const lista = document.getElementById(idLista);
   const itemLista = criaItemLista(estado);
   lista.appendChild(itemLista);
+
+  formulario.reset();
+  formulario.nome.focus();
 }
 
 function criaItemLista(estado) {

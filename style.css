@@ -23,7 +23,7 @@ article > section {
 }
 
 .listas-cadastrados li {
-  display: inline-flex;
+  display: flex;
   gap: 1em;
 }
 
@@ -37,4 +37,17 @@ article > section {
 
 .lista-seniors li :first-child {
   color: hsl(300, 100%, 25%);
+}
+
+.registro {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  margin-inline-start: 2em;
+  gap: 0.5em;
+}
+
+.registro > label {
+  display: flex;
+  gap: 0.5em;
 }

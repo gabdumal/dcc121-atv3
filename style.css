@@ -1,15 +1,22 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(200deg 15% 85%);
+  background-color: hsl(200deg 15% 99%);
 }
 
 .listas-cadastrados > div {
   display: flex;
   flex-direction: row;
+  gap: 5em;
+}
+
+.listas-cadastrados ul {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .listas-cadastrados li {
-  list-style: none;
+  display: inline-flex;
+  gap: 1em;
 }
 
 .lista-juniors li :first-child {

@@ -16,9 +16,17 @@
       <section>
         <form id="registro" class="registro">
           <label for="nome">Nome</label>
-          <input id="nome" type="text" name="nome" />
+          <input id="nome" type="text" name="nome" required />
           <label>Idade</label>
-          <input id="idade" for="idade" type="number" name="idade" />
+          <input
+            id="idade"
+            for="idade"
+            type="number"
+            name="idade"
+            min="0"
+            max="200"
+            required
+          />
           <input type="submit" name="enviar" value="Enviar" />
         </form>
       </section>
